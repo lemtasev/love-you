@@ -1,13 +1,22 @@
 <template>
   <div class="home">
+    <Version/>
+    <Countdown/>
     <img src="../assets/logo.png">
     <h1>{{ msg }}</h1>
   </div>
 </template>
 
 <script>
+import Version from '@/components/Version'
+import Countdown from '@/components/Countdown'
+
 export default {
   name: 'Home',
+  components: {
+    Version,
+    Countdown
+  },
   data () {
     return {
       msg: 'TEST'
@@ -16,8 +25,7 @@ export default {
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style lang="scss" scoped>
 .home {
   display: flex;
   flex-direction: column;
