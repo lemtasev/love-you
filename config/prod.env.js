@@ -1,5 +1,5 @@
 'use strict'
 module.exports = {
-  VERSION: '"0.0.2"',
+  VERSION: '"2022.1.7"',
   NODE_ENV: '"production"'
 }
